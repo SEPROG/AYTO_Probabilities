@@ -12,6 +12,12 @@ t_matchbox_info: TypeAlias = tuple[list[t_matches], list[t_matches]]  # first no
 # TODO: add more custom(-izable) filtering mechanisms
 
 
+# TODO: add return types (is generator but idk the correct declaration)
+def gen_base_scenarios(set_b: list[int]):
+    for perm_b in permutations(set_b):
+        yield [[pid_b] for pid_b in perm_b]  # TODO: this is correct idk why ide says no
+
+
 # TODO: add return types (it's generator but idk the correct declaration)
 def gen_all_scenarios(participants: nt.t_participants):
     # create PIDs (Participant IDs) for set_a, set_b and set_add
@@ -28,10 +34,13 @@ def gen_all_scenarios(participants: nt.t_participants):
             yield [x[j] + a[j] for j in range(len(x))]
 
 
-# TODO: add return types (is generator but idk the correct declaration)
-def gen_base_scenarios(set_b: list[int]):
-    for perm_b in permutations(set_b):
-        yield [[pid_b] for pid_b in perm_b]  # TODO: this is correct idk why ide says no
+# TODO add return type
+def create_generators():
+    g = [gen_all_scenarios(nt.participants)]
+    g += [filter_match_box(g[-1], nt.match_box)]
+    for result in nt.match_nights:
+        g += [filter_match_night(g[-1], result)]
+    return g
 
 
 def filter_match_box(scenarios: Iterable[t_scenario],
@@ -73,15 +82,6 @@ def main() -> None:
     vis.print_probabilities_cli(occurrences, participants, False)
     print()
     vis.print_probabilities_cli(occurrences, participants, True)
-
-
-# TODO add return type
-def create_generators():
-    g = [gen_all_scenarios(nt.participants)]
-    g += [filter_match_box(g[-1], nt.match_box)]
-    for result in nt.match_nights:
-        g += [filter_match_night(g[-1], result)]
-    return g
 
 
 if __name__ == '__main__':
