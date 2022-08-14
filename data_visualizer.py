@@ -15,9 +15,9 @@ def print_probabilities(occurrences: list[list[int]],
     all_scenarios: int = factorial(len(occurrences)) * 10 ** (len(occurrences[0]) - len(occurrences))
 
     # gradient for cell background
-    gradient = ((1.0, 0.0),  # r (100%, 0%)
-                (0.0, 0.0),  # g (100%, 0%)
-                (1.0, 0.8))  # b (100%, 0%)
+    gradient = ((1.0, 0.2),  # r (100%, 0%)
+                (0.0, 0.2),  # g (100%, 0%)
+                (1.0, 1.0))  # b (100%, 0%)
 
     cell_values = [['%.2f%%' % (p * 100 / n_scenarios) if relative else str(p)
                     for p in sublist] for sublist in occurrences]
