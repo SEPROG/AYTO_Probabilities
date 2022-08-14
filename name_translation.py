@@ -7,7 +7,7 @@ t_match_box: TypeAlias = tuple[list[list[int]], list[list[int]]]
 # Testing Values
 participants: t_participants = (
     # set a
-    # scenarios are NOT based on this set. This is set only serves for translation from pid to name
+    # scenarios are NOT calculated based on this set. This is set only serves for translation from pid to name
     # scenario participant ids (named "pid") start at 0
     ['Male PID %i' % i for i in range(10)],
 
@@ -23,8 +23,8 @@ participants: t_participants = (
 )
 
 match_box: t_match_box = (
-    [[], [], [], [], [], [], [], [], [4], []],
-    [[], [0], [], [], [], [], [], [], [], []]
+    [[], [], [], [], [], [], [], [], [4], []],  # no match
+    [[], [0], [], [], [], [], [], [], [], []]   # perfect match
 )
 
 match_nights: list[t_match_night] = [
@@ -37,7 +37,7 @@ match_nights: list[t_match_night] = [
 participants = (
     ['Amadu', 'Calvin', 'Fabio', 'Luca', 'Lukas', 'Martin', 'Maurice', 'Max', 'Michael', 'Pharrell'],
     ['Anna', 'Cecilia', 'Celina', 'Franziska', 'Gina', 'Isabelle', 'Karina', 'Luisa', 'Ricarda', 'Zoe'],
-    []
+    ['tmp']
 )
 
 match_box = (
@@ -56,12 +56,12 @@ match_nights = [
 #    ['Desirée']
 # )
 #
-# match_box: t_match_box = (
+# match_box = (
 #    [[8], [7], [], [], [7], [], [3], [3], [], []],
 #    [[], [], [], [], [], [9], [], [], [], []]
 # )
 #
-# match_nights: list[t_match_night] = [
+# match_nights = [
 #    ([8, 7, 9, 1, 3, 2, 5, 4, 6, 0], 3),
 #    ([0, 7, 2, 9, 1, 6, 5, 4, 3, 8], 2),
 #    ([8, 5, 9, 3, 1, 2, 7, 4, 6, 0], 2),

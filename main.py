@@ -9,8 +9,7 @@ t_scenario: TypeAlias = list[t_matches]
 t_matchbox_info: TypeAlias = tuple[list[t_matches], list[t_matches]]  # first no-match second perf-match
 
 
-# TODO: add more custom(-izable) filtering mechanisms
-
+# TODO: compute in parallel
 
 # TODO: add return types (is generator but idk the correct declaration)
 def gen_base_scenarios(set_b: list[int]):
@@ -22,16 +21,20 @@ def gen_base_scenarios(set_b: list[int]):
 def gen_all_scenarios(participants: nt.t_participants):
     # create PIDs (Participant IDs) for set_a, set_b and set_add
     set_a, set_b, set_add = tuple(list(range(len(s))) for s in participants)
+    len_b = len(set_b)
+
     # set_add IDs are shifted to fit set_b
     set_add = [add_index + len(set_b) for add_index in set_add]
+    len_add = len(set_add)
 
-    # TODO: rename x, y and a
-    for x in gen_base_scenarios(set_b):
-        for y in product(set_b, repeat=len(set_add)):
-            a = [[]] * len(x)
-            for i in range(len(y)):
-                a[y[i]] = a[y[i]] + [set_add[i]]
-            yield [x[j] + a[j] for j in range(len(x))]
+    for perm_b in gen_base_scenarios(set_b):
+        for prod in product(set_b, repeat=len_add):
+            perm_add = [[]] * len_b
+            for i in range(len_add):
+                perm_add[prod[i]] = perm_add[prod[i]] + [set_add[i]]
+
+            # return scenario by combining permutation of set_b and set_add
+            yield [matches[0] + matches[1] for matches in zip(perm_b, perm_add)]
 
 
 # TODO add return type
