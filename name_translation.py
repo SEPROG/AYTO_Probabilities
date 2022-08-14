@@ -4,6 +4,7 @@ t_participants: TypeAlias = tuple[list[str], list[str], list[str]]
 t_match_night: TypeAlias = tuple[list[int], int]
 t_match_box: TypeAlias = tuple[list[list[int]], list[list[int]]]
 
+
 # Testing Values
 participants: t_participants = (
     # set a
@@ -33,11 +34,12 @@ match_nights: list[t_match_night] = [
     ([9, 8, 7, 6, 5, 4, 3, 2, 1, 10], 1)
 ]
 
+
 # AYTO VIP S2
 participants = (
     ['Amadu', 'Calvin', 'Fabio', 'Luca', 'Lukas', 'Martin', 'Maurice', 'Max', 'Michael', 'Pharrell'],
     ['Anna', 'Cecilia', 'Celina', 'Franziska', 'Gina', 'Isabelle', 'Karina', 'Luisa', 'Ricarda', 'Zoe'],
-    ['tmp']
+    []
 )
 
 match_box = (
@@ -48,6 +50,7 @@ match_box = (
 match_nights = [
     ([1, 4, 7, 9, 5, 2, 8, 3, 0, 6], 3),
 ]
+
 
 # AYTO S3
 # participants = (
