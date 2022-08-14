@@ -1,5 +1,3 @@
-import json
-import sys
 from itertools import permutations, product
 from typing import TypeAlias, Iterable
 
@@ -10,17 +8,16 @@ t_matches: TypeAlias = list[int]
 t_scenario: TypeAlias = list[t_matches]
 t_matchbox_info: TypeAlias = tuple[list[t_matches], list[t_matches]]  # first no-match second perf-match
 
-generated: int = 0
-
 
 # TODO: add more custom(-izable) filtering mechanisms
 
 
 # TODO: add return types (it's generator but idk the correct declaration)
 def gen_all_scenarios(participants: nt.t_participants):
+    # create PIDs (Participant IDs) for set_a, set_b and set_add
     set_a, set_b, set_add = tuple(list(range(len(s))) for s in participants)
+    # set_add IDs are shifted to fit set_b
     set_add = [add_index + len(set_b) for add_index in set_add]
-    global generated
 
     # TODO: rename x, y and a
     for x in gen_base_scenarios(set_b):
@@ -28,15 +25,13 @@ def gen_all_scenarios(participants: nt.t_participants):
             a = [[]] * len(x)
             for i in range(len(y)):
                 a[y[i]] = a[y[i]] + [set_add[i]]
-            generated += 1
             yield [x[j] + a[j] for j in range(len(x))]
 
 
-# TODO: rename x and y
 # TODO: add return types (is generator but idk the correct declaration)
 def gen_base_scenarios(set_b: list[int]):
-    for x in permutations(set_b):
-        yield [[y] for y in x]  # TODO: this is correct idk why ide says no
+    for perm_b in permutations(set_b):
+        yield [[pid_b] for pid_b in perm_b]  # TODO: this is correct idk why ide says no
 
 
 def filter_match_box(scenarios: Iterable[t_scenario],
@@ -66,15 +61,18 @@ def count_occurrences(scenarios: Iterable[t_scenario]) -> list[list[int]]:
     return occurrences
 
 
-def main():
+def main() -> None:
     g = create_generators()
 
     occurrences: list[list[int]] = count_occurrences(g[-1])
-    vis.print_probabilities(occurrences, True, title='AYTO Probabilities')
+    participants = (nt.participants[0],
+                    [name for pset in nt.participants[1:] for name in pset])
 
-    vis.print_probabilities_cli(occurrences, False)
+    vis.print_probabilities(occurrences, participants, True, title='AYTO Probabilities')
+
+    vis.print_probabilities_cli(occurrences, participants, False)
     print()
-    vis.print_probabilities_cli(occurrences, True)
+    vis.print_probabilities_cli(occurrences, participants, True)
 
 
 # TODO add return type
@@ -87,7 +85,4 @@ def create_generators():
 
 
 if __name__ == '__main__':
-    if len(sys.argv) > 1:
-        with open(sys.argv[1], 'r') as f:
-            nt.participants, nt.match_box, nt.match_nights = tuple(json.load(f))
     main()
