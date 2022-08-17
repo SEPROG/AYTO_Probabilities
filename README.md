@@ -39,3 +39,7 @@ In this season "Match Night" results and "Match Box" results are released in dif
 ![](imgs/ayto_vip_s2/ayto_vip_s02e03_mb.png)
 #### Episode 4 (Match Night result)
 ![](imgs/ayto_vip_s2/ayto_vip_s02e04_mn.png)
+#### Episode 4 (Match Night result)
+![](imgs/ayto_vip_s2/ayto_vip_s02e05_mb.png)
+#### Episode 4 (Match Night result)
+![](imgs/ayto_vip_s2/ayto_vip_s02e06_mn.png)
