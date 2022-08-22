@@ -1,0 +1,79 @@
+$ SEASON
+Amadu; Calvin; Fabio; Luca; Lukas; Martin; Maurice; Max; Michael; Pharrell
+Anna; Cecilia; Celina; Franziska; Gina; Isabelle; Karina; Luisa; Ricarda; Zoe
+
+
+$ EPISODE
+Episode 00
+
+
+$ EPISODE
+Episode 03
+
+$ MATCH BOX
+Martin; Zoe; 0
+
+
+$ EPISODE
+Episode 04
+
+$ MATCH NIGHT
+Amadu; Cecilia
+Calvin; Gina
+Fabio; Luisa
+Luca; Zoe
+Lukas; Isabelle
+Martin; Celina
+Maurice; Ricarda
+Max; Franziska
+Michael; Anna
+Pharrell; Karina
+3
+
+
+$ EPISODE
+Episode 05
+
+$ MATCH BOX
+Pharrell; Karina; 0
+
+
+$ EPISODE
+Episode 06
+
+$ MATCH NIGHT
+Maurice; Ricarda
+Martin; Isabelle
+Michael; Anna
+Amadu; Gina
+Calvin; Luisa
+Luca; Franziska
+Max; Celina
+Lukas; Zoe
+Fabio; Karina
+Pharrell; Cecilia
+2
+
+
+$ EPISODE
+Episode 07
+
+$ MATCH BOX
+Lukas; Celina; 0
+
+
+$ EPISODE
+Episode 08
+
+$ MATCH NIGHT
+Lukas; Franziska
+Calvin; Karina
+Fabio; Celina
+Max; Zoe
+Luca; Isabelle
+Pharrell; Luisa
+Amadu; Cecilia
+Maurice; Ricarda
+Martin; Anna
+Michael; Gina
+3

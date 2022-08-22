@@ -1,0 +1,151 @@
+$ SEASON
+Andre; Antonio; Dustin; Jordi; Leon; Marius; Max; Mike; Tim; William
+Dana; Estelle; Isabelle; Jessica; Joelina; Kerstin; Marie; Monami; Raphaela; Zaira
+
+
+$ EPISODE
+Episode 00
+
+
+$ EPISODE
+Episode 02
+
+$ MATCH BOX
+Mike; Jessica; 0
+
+$ MATCH NIGHT
+Andre; Raphaela
+Antonio; Monami
+Dustin; Zaira
+Jordi; Estelle
+Leon; Jessica
+Marius; Isabelle
+Max; Kerstin
+Mike; Joelina
+Tim; Marie
+William; Dana
+3
+
+
+$ EPISODE
+Episode 04
+
+$ MATCH BOX
+Leon; Monami; 0
+
+$ MATCH NIGHT
+Andre; Dana
+Antonio; Monami
+Dustin; Isabelle
+Jordi; Zaira
+Leon; Estelle
+Marius; Marie
+Max; Kerstin
+Mike; Joelina
+Tim; Jessica
+William; Raphaela
+2
+
+
+$ EPISODE
+Episode 06
+
+$ MATCH BOX
+Andre; Raphaela; 0
+
+$ MATCH NIGHT
+Andre; Raphaela
+Antonio; Kerstin
+Dustin; Zaira
+Jordi; Jessica
+Leon; Estelle
+Marius; Isabelle
+Max; Monami
+Mike; Joelina
+Tim; Marie
+William; Dana
+2
+
+
+$ EPISODE
+Episode 08
+
+$ MATCH NIGHT
+Andre; Isabelle
+Antonio; Monami
+Dustin; Zaira
+Jordi; Raphaela
+Leon; Estelle
+Marius; Jessica
+Max; Marie
+Mike; Joelina
+Tim; Kerstin
+William; Dana
+3
+
+
+$ EPISODE
+Episode 09
+
+$ PARTICIPANT
+Desirée
+
+
+$ EPISODE
+Episode 10
+
+$ MATCH BOX
+Antonio; Monami; 0
+
+$ MATCH NIGHT
+Andre; Joelina
+Antonio; Kerstin
+Dustin; Isabelle
+Jordi; Zaira
+Leon; Jessica
+Marius; Raphaela
+Max; Monami
+Mike; Estelle
+Tim; Desirée
+William; Dana
+2
+
+
+$ EPISODE
+Episode 12
+
+$ MATCH BOX
+Max; Jessica; 0
+
+$ MATCH NIGHT
+Andre; Marie
+Antonio; Dana
+Dustin; Isabelle
+Jordi; Desirée
+Leon; Jessica
+Marius; Zaira
+Max; Kerstin
+Mike; Estelle
+Tim; Joelina
+William; Raphaela
+4
+
+
+$ EPISODE
+Episode 14
+
+$ MATCH BOX
+Marius; Zaira; 1
+
+$ MATCH NIGHT
+Andre; Desirée
+Antonio; Dana
+Dustin; Isabelle
+Jordi; Monami
+Leon; Jessica
+Marius; Zaira
+Max; Marie
+Mike; Joelina
+Tim; Kerstin
+William; Raphaela
+6
