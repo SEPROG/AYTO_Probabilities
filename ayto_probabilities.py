@@ -109,7 +109,7 @@ def _styled_df(occurrences):
          'props': [
              ('background-color', 'dimgrey'),
              ('color', 'white'),
-             ('font-family', 'system-ui')
+             ('font-family', 'sans-serif')
          ]},
         {'selector': 'td',
          'props': [
