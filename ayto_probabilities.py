@@ -78,6 +78,10 @@ def main(args: dict[str, Any]):
                                options={'--quiet': ''})
 
     if args['excel']:
+        # append file extension if not specified (correctly)
+        if args['excel'][-5:] != '.xlsx':
+            args['excel'] += '.xlsx'
+
         with pd.ExcelWriter(args['excel']) as excel_writer:
             for ep_name, df in excel_results:
                 df.to_excel(excel_writer, sheet_name=ep_name)
