@@ -1,6 +1,6 @@
 $ SEASON
-Amadu; Calvin; Fabio; Luca; Lukas; Martin; Maurice; Max; Michael; Pharrell
 Anna; Cecilia; Celina; Franziska; Gina; Isabelle; Karina; Luisa; Ricarda; Zoe
+Amadu; Calvin; Fabio; Luca; Lukas; Martin; Maurice; Max; Michael; Pharrell
 
 
 $ EPISODE
@@ -11,23 +11,23 @@ $ EPISODE
 Episode 03
 
 $ MATCH BOX
-Martin; Zoe; 0
+Zoe; Martin; 0
 
 
 $ EPISODE
 Episode 04
 
 $ MATCH NIGHT
-Amadu; Cecilia
-Calvin; Gina
-Fabio; Luisa
-Luca; Zoe
-Lukas; Isabelle
-Martin; Celina
-Maurice; Ricarda
-Max; Franziska
-Michael; Anna
-Pharrell; Karina
+Cecilia; Amadu
+Gina; Calvin
+Luisa; Fabio
+Zoe; Luca
+Isabelle; Lukas
+Celina; Martin
+Ricarda; Maurice
+Franziska; Max
+Anna; Michael
+Karina; Pharrell
 3
 
 
@@ -35,23 +35,23 @@ $ EPISODE
 Episode 05
 
 $ MATCH BOX
-Pharrell; Karina; 0
+Karina; Pharrell; 0
 
 
 $ EPISODE
 Episode 06
 
 $ MATCH NIGHT
-Maurice; Ricarda
-Martin; Isabelle
-Michael; Anna
-Amadu; Gina
-Calvin; Luisa
-Luca; Franziska
-Max; Celina
-Lukas; Zoe
-Fabio; Karina
-Pharrell; Cecilia
+Ricarda; Maurice
+Isabelle; Martin
+Anna; Michael
+Gina; Amadu
+Luisa; Calvin
+Franziska; Luca
+Celina; Max
+Zoe; Lukas
+Karina; Fabio
+Cecilia; Pharrell
 2
 
 
@@ -59,21 +59,36 @@ $ EPISODE
 Episode 07
 
 $ MATCH BOX
-Lukas; Celina; 0
+Celina; Lukas; 0
 
 
 $ EPISODE
 Episode 08
 
 $ MATCH NIGHT
-Lukas; Franziska
-Calvin; Karina
-Fabio; Celina
-Max; Zoe
-Luca; Isabelle
-Pharrell; Luisa
-Amadu; Cecilia
-Maurice; Ricarda
-Martin; Anna
-Michael; Gina
+Franziska; Lukas
+Karina; Calvin
+Celina; Fabio
+Zoe; Max
+Isabelle; Luca
+Luisa; Pharrell
+Cecilia; Amadu
+Ricarda; Maurice
+Anna; Martin
+Gina; Michael
 3
+
+
+$ EPISODE
+Episode 09
+
+# Actually not match box but someone (Lukas) (and therefore their Perfect Match (Luisa)) had to leave
+$ MATCH BOX
+Luisa; Lukas; 1
+
+
+$ EPISODE
+Episode 10
+
+$ PARTICIPANT
+Felix

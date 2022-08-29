@@ -49,3 +49,7 @@ In this season "Match Night" results and "Match Box" results are released in dif
 ![](results/AYTO%20VIP%20S2/png/Episode%2007.png)
 #### Episode 8 (Match Night result)
 ![](results/AYTO%20VIP%20S2/png/Episode%2008.png)
+#### Episode 9 (Participant(s) left)
+![](results/AYTO%20VIP%20S2/png/Episode%2008.png)
+#### Episode 10 (New Participant)
+![](results/AYTO%20VIP%20S2/png/Episode%2008.png)
