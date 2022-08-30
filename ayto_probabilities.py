@@ -74,6 +74,7 @@ def main(args: dict[str, Any]):
 
         if args['png']:
             # TODO: implement failsafe via matplotlib engine (mby with try/except)
+            # TODO: Names can be too large for box (observe "Franziska" in AYTO VIP S2)
             imgkit.from_string(styled.to_html(encoding='utf16'), '%s/%s.png' % (args['png'], ep_name),
                                options={'--quiet': ''})
 
