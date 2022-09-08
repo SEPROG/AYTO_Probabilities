@@ -99,3 +99,20 @@ Episode 11
 
 $ MATCH BOX
 Ricarda; Felix; 0
+
+
+$ EPISODE
+Episode 12
+
+$ MATCH NIGHT
+Luisa; Lukas
+Cecilia; Amadu
+Anna; Pharrell
+Franziska; Michael
+Ricarda; Max
+Zoe; Luca
+Celina; Fabio
+Karina; Martin
+Isabelle; Maurice
+Gina; Felix
+3
