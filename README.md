@@ -59,3 +59,5 @@ In this season "Match Night" results and "Match Box" results are released in dif
 ![](results/AYTO%20VIP%20S2/png/Episode%2012.png)
 #### Episode 13 (Match Box result)
 ![](results/AYTO%20VIP%20S2/png/Episode%2013.png)
+#### Episode 14 (Match Night result)
+![](results/AYTO%20VIP%20S2/png/Episode%2014.png)

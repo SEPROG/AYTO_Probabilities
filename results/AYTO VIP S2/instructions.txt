@@ -123,3 +123,20 @@ Episode 13
 
 $ MATCH BOX
 Isabelle; Pharrell; 0
+
+
+$ EPISODE
+Episode 14
+
+$ MATCH NIGHT
+Luisa; Lukas
+Isabelle; Martin
+Ricarda; Pharrell
+Cecilia; Maurice
+Anna; Michael
+Franziska; Max
+Celina; Fabio
+Gina; Felix
+Karina; Calvin
+Zoe; Luca
+3
