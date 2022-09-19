@@ -147,3 +147,20 @@ Episode 15
 
 $ MATCH BOX
 Cecilia; Amadu; 1
+
+
+$ EPISODE
+Episode 16
+
+$ MATCH NIGHT
+Luisa; Lukas
+Cecilia; Amadu
+Gina; Felix
+Isabelle; Martin
+Anna; Michael
+Ricarda; Pharrell
+Celina; Fabio
+Karina; Calvin
+Franziska; Max
+Zoe; Luca
+4
