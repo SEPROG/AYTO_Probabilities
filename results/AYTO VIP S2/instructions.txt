@@ -171,3 +171,19 @@ Episode 17
 
 $ MATCH BOX
 Anna; Michael; 1
+
+$ EPISODE
+Episode 18
+
+$ MATCH NIGHT
+Luisa; Lukas
+Cecilia; Amadu
+Anna; Michael
+Franziska; Calvin
+Celina; Luca
+Karina; Martin
+Zoe; Maurice
+Ricarda; Pharrell
+Gina; Fabio
+Isabelle; Felix
+5
